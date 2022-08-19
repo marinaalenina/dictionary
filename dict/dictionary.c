@@ -89,15 +89,6 @@ void print(struct dictionary* dict) {
 		if (!strcmp(dict->dic[i]->type, "char")) {
 			printf("key = %s; value = %c\n", (char*)(*(dict->dic + i))->key, *(char**)(*(dict->dic + i))->value);
 		}
-		//switch(dict->dic[i]->type){
-		//	case "int": printf("key = %s; value = %d\n", (char*)dict->dic[i]->key, *(int*)dict.dic[i].value); break;
-		//	case "double": printf("key = %s; value = %f\n", (char*)dict->dic[i]->key, *(int*)dict.dic[i].value); break;
-		//	case "float": printf("key = %s; value = %f\n", (char*)dict->dic[i]->key, *(int*)dict.dic[i].value); break;
-		//	case "int": printf("key = %s; value = %d\n", (char*)dict->dic[i]->key, *(int*)dict.dic[i].value); break;
-		//	case "int": printf("key = %s; value = %d\n", (char*)dict->dic[i]->key, *(int*)dict.dic[i].value); break;
-		//	case "char": printf("key = %s; value = %c\n", (char*)dict->dic[i]->key, *(int*)dict.dic[i].value); break;
-		//	case "char*": printf("key = %s; value = %s\n", (char*)dict->dic[i]->key, *(int*)dict.dic[i].value); break;
-		//}
 	}
 }
 

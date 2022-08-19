@@ -19,9 +19,7 @@ int main() {
 	keyvalue* kv1 = create(a, &b, "int", sizeof(int));
 	keyvalue* copy = kv_copy(kv1);
 	printf("%d\n", compare(kv1, copy));
-	copy->key[0] = 't';
-	copy->key[1] = 'w';
-	copy->key[2] = 'o';
+	copy->key[0] = "two";
 
 	dictionary* dictionary = create_dict();
 	printf("%d\n\n", compare(kv1, copy));
